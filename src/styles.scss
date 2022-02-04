@@ -1,1 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~locomotive-scroll/src/locomotive-scroll.scss';
+@import "./assets/scss/rest.scss";
+// font-family: 'Bai Jamjuree', sans-serif;
+// font-family: 'Bodoni Moda', serif;
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Syncopate', sans-serif;
+
+
+$bg-color: #f5f0ec;
+
+
+
+html,
+body{
+   &,
+   *{
+      cursor: none;
+   }
+}
+
+
+ html{
+   font-size: 62.5%;
+   scroll-behavior:smooth;
+   overflow-x: hidden;
+
+
+ }
+
+ body{
+    font-family: 'Poppins', sans-serif;
+    background-color: $bg-color;
+    font-size: 1.6rem;
+
+    &::-webkit-scrollbar {
+      width: 1.4rem;
+   }
+   
+   &::-webkit-scrollbar-track {
+      background-color: $bg-color;
+
+   }
+   
+   &::-webkit-scrollbar-thumb {
+      background-color: #555;
+      // border-radius: 10px;
+    }
+ }
+
+
+ .main-container{
+    padding: 0 5vw;
+    height: 100%;
+ }
+
+ section{
+    padding: 10rem 0;
+
+    .section-header{
+       text-transform: uppercase;
+       font-family: 'Syncopate', sans-serif;
+       font-weight: 600;
+       letter-spacing: 1px;
+       color: #626262;
+       margin-bottom: 5rem;
+    }
+   .header-section{
+      margin-bottom: 5rem;
+   }
+ }

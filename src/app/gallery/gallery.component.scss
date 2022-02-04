@@ -1,0 +1,52 @@
+.gallery{
+    background-color: #d53f41;
+    margin-left: -5vw;
+    margin-right: -5vw;
+
+    &__wraper{
+        height: 80vh;
+        width: 400%;
+        padding: 10vh 0;
+
+        display: flex;
+        flex-wrap: nowrap;
+        position: relative;
+    }
+
+    &__item{
+
+    }
+
+    &__counter{
+        position: absolute;
+        top: 10%;
+        left: 10rem;
+        color: #dbd8d6;
+        mix-blend-mode: difference;
+        line-height: 1.6;
+        font-family: 'Bai Jamjuree';
+        z-index: 1;
+        font-weight: 600;
+        font-size: 1.6rem;
+        display: inline-block;
+        -webkit-font-smoothing: antialiased;
+
+
+        &__start{
+
+        }
+
+        &__divider{
+            content: '';
+            height: 1px;
+            width: 6.75vw;
+            display: inline-block;
+            margin: .7rem 1rem;
+            background-color: #fff;
+        }
+
+        &__end{
+
+        }
+    }
+}

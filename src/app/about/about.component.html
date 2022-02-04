@@ -1,0 +1,16 @@
+<section class="about" data-scroll-section >
+    <h6 class="section-header">about</h6>
+    <p 
+    id="headline" 
+    waIntersectionObserver 
+    (waIntersectionObservee)="runTextAnimation($event)"
+     waIntersectionThreshold=".3" 
+     #text 
+     ngGxSplitText 
+     [splitOptions]="{defer: true,onlyWords: true}" 
+     [ngClass]="{'is-reveal': reveal}">
+        Flirty Flowers is a blog about flowers and the floral designers who make them into art. Creativity 
+        and the art of ‘making’ require dialogue. The full purpose of the dialogue. The full purpose of the 
+        and inspire. We value art, we value insight, and we value opinion.
+    </p>
+</section>

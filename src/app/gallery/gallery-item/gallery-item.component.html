@@ -1,0 +1,21 @@
+<div 
+class="gallery-item-wraper" 
+[ngClass]="{'is-reveal': reveal}" 
+#galleryItemWraper
+waIntersectionObserver 
+(waIntersectionObservee)="updateActiveImage($event, index)"
+ waIntersectionThreshold=".3">
+    <div></div>
+    <div class="gallery-item">
+        <div class="gallery-item__info">
+            <h1 class="gallery-item__title">{{ imageObj.title }}</h1>
+            <h6 class="gallery-item__subtitle">{{ imageObj.subtitle }}</h6>
+            <p class="gallery-item__category">{{ imageObj.category }}</p>
+        </div>
+        <div 
+        class="gallery-item__image" 
+        [style.background-image]="'url(' + imageObj.src + ')'"></div>
+
+    </div>
+
+</div>

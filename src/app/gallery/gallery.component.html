@@ -1,0 +1,12 @@
+<section class="gallery" #gallery data-scroll-section>
+    <div class="gallery__wraper" #galleryWraper>
+            <div class="gallery__counter">
+                <span class="gallery__counter__start">{{activeImage}}</span>
+                <span class="gallery__counter__divider"></span>
+                <span class="gallery__counter__end">{{images.length}}</span>
+            </div>
+            <div *ngFor="let imageObj of images; let i=index">
+                <gallery-item (activGalleryImage)="handelActiveImage($event)" #galleryItemComp [key]="imageObj.src" [index]="i" [imageObj]="imageObj"></gallery-item>
+            </div>
+        </div>
+</section>
